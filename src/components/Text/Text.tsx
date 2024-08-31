@@ -14,7 +14,7 @@ interface Props extends HTMLAttributes<HTMLSpanElement> {
   ellipsis?: boolean;
   whiteSpace?: CSSProperties['whiteSpace'];
   tag?: 'span' | 'p';
-  hoverBgColor?: string; // 추가된 hover 배경색 속성
+  hoverBgColor?: string;
 }
 
 const Text = ({
@@ -26,7 +26,7 @@ const Text = ({
   ellipsis = false,
   whiteSpace = 'nowrap',
   tag = 'span',
-  hoverBgColor, // 추가된 hover 배경색 속성
+  hoverBgColor,
 }: Props) => {
   return (
     <StyledText
@@ -34,7 +34,7 @@ const Text = ({
       fontType={fontType}
       as={tag}
       ellipsis={ellipsis}
-      hoverBgColor={hoverBgColor} // 전달된 hover 배경색을 styled 컴포넌트로 전달
+      hoverBgColor={hoverBgColor}
     >
       {children}
     </StyledText>

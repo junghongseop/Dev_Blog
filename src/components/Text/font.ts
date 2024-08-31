@@ -18,7 +18,7 @@ const fontGenerator = (
 
 const font = {
   header: fontGenerator('Alumni Sans', 800, 24, 500, 0, 'italic'),
-  footer: fontGenerator('Alumni Sans', 100, 15, 18, 0, 'normal'),
+  footer: fontGenerator('Alumni Sans', 100, 15, 18, 0, 'italic'),
 
   H1: fontGenerator('Alumni Sans', 800, 100, 120, 0, 'italic'),
   H2: fontGenerator('Alumni Sans', 600, 25, 30, 0, 'normal'),
