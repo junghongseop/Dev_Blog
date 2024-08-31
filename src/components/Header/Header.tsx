@@ -4,7 +4,7 @@ import { Box, ChakraProvider, useColorModeValue } from '@chakra-ui/react';
 import Logo from './Logo';
 import Portfolio from './Portfolio';
 import ThemeToggler from './ThemeToggler';
-import IconGithub from '../Icon/IconGithub';
+import Github from './Github';
 
 const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -32,7 +32,7 @@ const Header = () => {
             <Portfolio />
           </PortfolioItem>
           <GithubItem>
-            <StyledIconGithub />
+            <Github />
           </GithubItem>
           <ThemeItem>
             <ThemeToggler />
@@ -86,11 +86,4 @@ const GithubItem = styled.div`
 const ThemeItem = styled.div`
   display: flex;
   align-items: center;
-`;
-
-const StyledIconGithub = styled(IconGithub)`
-  width: 20px;
-  height: 20px;
-  padding: 0;
-  margin: 0;
 `;

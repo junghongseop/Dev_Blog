@@ -4,20 +4,20 @@ import styled from 'styled-components';
 import { useColorModeValue } from '@chakra-ui/react';
 import Text from '../Text/Text';
 
-const Portfolio = () => {
+const Github = () => {
   const textColor = useColorModeValue('black', 'white');
   const hoverBgColor = useColorModeValue('blackAlpha.200', 'whiteAlpha.200');
 
   return (
-    <Link href="https://sassy-cloth-fbe.notion.site/e122a715530f452998b15be52a20689b">
+    <Link href="https://github.com/junghongseop">
       <StyledText fontType="header" color={textColor} hoverBgColor={hoverBgColor}>
-        Portfolio
+        Github
       </StyledText>
     </Link>
   );
 };
 
-export default Portfolio;
+export default Github;
 
 const StyledText = styled(Text)<{ hoverBgColor: string }>`
   display: inline-block;
